@@ -4,3 +4,4 @@ notes.md
 Gemfile.lock
 .ruby-version
 .ruby-gemset
+.DS_Store
