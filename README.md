@@ -2,7 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/spreedly/r2d2.svg?style=svg)](https://circleci.com/gh/spreedly/r2d2)
 
-R2D2 is a Ruby library for decrypting Google Pay and Android Pay payment tokens.
+R2D2 is a Ruby library for decrypting Google Pay (support ECv2) and Android Pay payment tokens.
 
 ## Ruby support
 
@@ -13,7 +13,7 @@ Currently, Ruby v2.2 or later is supported.
 Add to your `Gemfile`:
 
 ```ruby
-gem 'r2d2', git: 'https://github.com/spreedly/r2d2.git'
+gem 'r2d2', git: 'https://github.com/linyunjiang/r2d2.git'
 ```
 
 ## Google Pay Usage
@@ -31,7 +31,7 @@ Example Google Pay token values:
 }
 ```
 
-The `recipient_id` will be given to you by Google. Example: `merchant:12345678901234567890`. 
+The `recipient_id` will be given to you by Google. Test environment should use: `merchant:12345678901234567890`. 
 
 The `verification_keys` must be fetched from Google's servers for the appropriate environment:
 - production: https://payments.developers.google.com/paymentmethodtoken/keys.json
